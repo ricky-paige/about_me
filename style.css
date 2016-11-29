@@ -1,4 +1,11 @@
 * {
-  outline: 5px dotted black;
-  color: red;
+  outline: 1px dotted black;
+  color: blue;
+}
+h1 {
+  color: black;
+  font-family: sans-serif; 
+}
+h2 {
+  color: green;
 }
