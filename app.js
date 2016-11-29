@@ -35,3 +35,21 @@ if (response2 === 'no' || response2 === 'n') {
   document.write('2. Try for real this time friend.');
   document.write('<br>');
 }
+
+var response3 = prompt('Does Ricky play any instruments?').toLowerCase();
+if (response3 === 'yes' || response3 === 'y') {
+  alert('You\'re awesome at this dude!');
+  console.log('The user is right!');
+  document.write('3. Good job!');
+  document.write('<br>');
+} else if (response3 === 'no' || response3 === 'n') {
+  alert('Incorrect buddy /:');
+  console.log('The user is wrong');
+  document.write('3. You can do this, I believe in you!');
+  document.write('<br>');
+} else {
+  alert('I feel like you\'re doing this to annoy me');
+  console.log('This response though...');
+  document.write('I don\'t even know what to say');
+  document.write('<br>');
+}
