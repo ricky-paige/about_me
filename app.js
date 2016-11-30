@@ -50,6 +50,39 @@ if (response3 === 'yes' || response3 === 'y') {
 } else {
   alert('I feel like you\'re doing this to annoy me');
   console.log('This response though...');
-  document.write('I don\'t even know what to say');
+  document.write('3. I don\'t even know what to say');
   document.write('<br>');
+}
+
+var response4 = prompt('Did Ricky ever live in Las Vegas?').toLowerCase();
+if (response4 === 'yes' || response4 === 'y') {
+  alert('Damn, good job yo!');
+  console.log('The user is right!');
+  document.write('4. Another great job!');
+  document.write('<br>');
+} else if (response4 === 'no' || response4 === 'n') {
+  alert('Super wrong, sorry dude.');
+  console.log('The user is wrong');
+  document.write('4. Maybe try one more time?');
+  document.write('<br>');
+} else {
+  alert('/:');
+  console.log('Really dude?');
+  document.write('4. You must be fun at parties...');
+  document.write('<br>');
+}
+
+var response5 = prompt('Does Ricky like seafood?').toLowerCase();
+if (response5 === 'yes' || response5 === 'y') {
+  alert('Damn right he does!');
+  console.log('The user is right');
+  document.write('5. You\'re really good at this!');
+} else if (response5 === 'no' || response5 === 'n') {
+  alert('Got that one wrong');
+  console.log('The user is wrong');
+  document.write('5. Sorry :(');
+} else {
+  alert('Well this was fun, have a nice day');
+  console.log('Finally it\'s over');
+  document.write('5. I don\'t know what else to put here'); 
 }
