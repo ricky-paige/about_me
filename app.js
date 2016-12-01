@@ -77,12 +77,33 @@ if (response5 === 'yes' || response5 === 'y') {
   alert('Damn right he does!');
   console.log('The user is right');
   document.write('5. You\'re really good at this!');
+  document.write('<br>');
 } else if (response5 === 'no' || response5 === 'n') {
   alert('Got that one wrong');
   console.log('The user is wrong');
   document.write('5. Sorry :(');
+  document.write('<br>');
 } else {
   alert('Well this was fun, have a nice day');
   console.log('Finally it\'s over');
-  document.write('5. I don\'t know what else to put here'); 
+  document.write('5. I don\'t know what else to put here');
+  document.write('<br>');
+}
+
+var response6 = prompt('What is my favorite number?');
+if (response6 === '13') {
+  alert('That\'s right!');
+  console.log('The user is right');
+  document.write('Got another one right!');
+  document.write('<br>');
+} else if (response6 < '13') {
+  alert('Your guess is too low!');
+  console.log('The user guessed too low');
+  document.write('Too low, try again!');
+  document.write('<br>');
+} else {
+  alert('You guessed too high!');
+  console.log('The user guessed too high');
+  document.write('Too high, try again');
+  document.write('<br>');
 }
