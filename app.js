@@ -1,11 +1,15 @@
 'use strict';
-var response1 = prompt('Does Ricky have any pets?').toLowerCase();
+var username = prompt('Hello friend we\'re gonna play a guessing game, what\'s your name?');
+alert('Nice to meet you ' + username + '!');
+var counter = 0;
 
+var response1 = prompt('Does Ricky have any pets?').toLowerCase();
 if (response1 === 'no' || response1 === 'n') {
   alert('Correct! Good job my dude');
   console.log('The user is right!');
   document.write('1. You got it right!');
   document.write('<br>');
+  counter += 1;
 } else if (response1 === 'yes' || response1 === 'y') {
   alert('You got it wrong friend');
   console.log('The user is wrong');
@@ -24,6 +28,7 @@ if (response2 === 'no' || response2 === 'n') {
   console.log('The user is right');
   document.write('2. Correctamundo!');
   document.write('<br>');
+  counter += 1;
 } else if (response2 === 'yes' || response2 === 'y') {
   alert('Didn\'t get this one, sorry.');
   console.log('The user is wrong');
@@ -42,6 +47,7 @@ if (response3 === 'yes' || response3 === 'y') {
   console.log('The user is right!');
   document.write('3. Good job!');
   document.write('<br>');
+  counter += 1;
 } else if (response3 === 'no' || response3 === 'n') {
   alert('Incorrect buddy /:');
   console.log('The user is wrong');
@@ -60,6 +66,7 @@ if (response4 === 'yes' || response4 === 'y') {
   console.log('The user is right!');
   document.write('4. Another great job!');
   document.write('<br>');
+  counter += 1;
 } else if (response4 === 'no' || response4 === 'n') {
   alert('Super wrong, sorry dude.');
   console.log('The user is wrong');
@@ -78,6 +85,7 @@ if (response5 === 'yes' || response5 === 'y') {
   console.log('The user is right');
   document.write('5. You\'re really good at this!');
   document.write('<br>');
+  counter += 1;
 } else if (response5 === 'no' || response5 === 'n') {
   alert('Got that one wrong');
   console.log('The user is wrong');
@@ -90,20 +98,23 @@ if (response5 === 'yes' || response5 === 'y') {
   document.write('<br>');
 }
 
-var response6 = prompt('What is my favorite number?');
+var response6 = prompt('What is my favorite number?')
 if (response6 === '13') {
   alert('That\'s right!');
   console.log('The user is right');
-  document.write('Got another one right!');
+  document.write('6. Got another one right!');
   document.write('<br>');
+  counter += 1;
 } else if (response6 < '13') {
   alert('Your guess is too low!');
   console.log('The user guessed too low');
-  document.write('Too low, try again!');
+  document.write('6. Too low, try again!');
   document.write('<br>');
 } else {
   alert('You guessed too high!');
   console.log('The user guessed too high');
-  document.write('Too high, try again');
+  document.write('6. Too high, try again');
   document.write('<br>');
 }
+
+document.write('You got ' + counter + ' out of 6 correct ' + username);
